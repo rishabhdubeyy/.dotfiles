@@ -1,0 +1,29 @@
+configuration {
+  display-drun: "Applications 🚀";
+  display-filebrowser: "Files 📂";
+  display-window: "Window 💻";
+  modes: [ drun, filebrowser, window ];
+  //combi-modes: [ window, drun, run ];
+  font: "RobotoMono Nerd Font";
+
+}
+
+@theme "dmenu"
+ 
+/* Insert theme modifications after this */
+
+* {
+  //background-color: #352F44;
+  //lines: 8;
+  border: 0;
+}
+
+//window {
+//  width: 30%;
+//}
+
+listview {scrollbar: false;}
+
+//element {
+//    padding: 9;
+//}
