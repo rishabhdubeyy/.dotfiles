@@ -197,6 +197,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#something
+
 # bar colors
 set $bg-color #352F44
 set $inactive-bg-color #2A2438
