@@ -70,7 +70,7 @@ command=~/.config/i3blocks/scripts/volume/volume
 # The type defaults to "mem" if the instance is not specified.
 [memory]
 label= 🎟 
-separator=false
+separator=true
 interval=30
 command=~/.config/i3blocks/scripts/memory/memory
 
