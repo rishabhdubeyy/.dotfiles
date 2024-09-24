@@ -11,20 +11,20 @@ if true then return {} end
 return {
   -- add gruvbox
   --{ "ellisonleao/gruvbox.nvim" },
-  {
-    "craftzdog/solarized-osaka.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
+  --{
+  --  "craftzdog/solarized-osaka.nvim",
+  --  lazy = false,
+  --  priority = 1000,
+  --  opts = {},
+  --},
 
   -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "solarized-osaka",
-    },
-  },
+  --{
+  --  "LazyVim/LazyVim",
+  --  opts = {
+  --    colorscheme = "solarized-osaka",
+  --  },
+  --},
 
   -- change trouble config
   {
