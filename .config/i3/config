@@ -197,6 +197,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#bindsym $mod+Shift+f exec --no-startup-id kitty --hold -e ~/.dotfiles/.config/perscript/fzfcd.sh
 #something
 #another comething
 

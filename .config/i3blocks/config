@@ -39,17 +39,28 @@ markup=pango
 # The second parameter overrides the mixer selection
 # See the script for details.
 
-[go]
-label= 
-interval=once
-command=~/.config/i3blocks/scripts/go/go
+#[go]
+#label= 
+#interval=once
+#command=~/.config/i3blocks/scripts/go/go
 
 
-[node]
-label=󰎙 
-markup= pango
-interval=once
-command=node -v | awk '{ print " " $1 }'
+#[node]
+#label=󰎙 
+#markup= pango
+#interval=once
+#command=node -v | awk '{ print " " $1 }'
+
+#[focused_window]
+#full_text=Win
+#command=~/.dotfiles/.config/i3blocks/scripts/focused_window/focused_window.sh
+#interval=1
+#separator=false
+#width=500
+#
+#[space]
+#full_text=                                                                                                                          
+#interval=once
 
 [weather]
 full_text=Weather:
