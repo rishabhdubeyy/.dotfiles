@@ -62,11 +62,11 @@ markup=pango
 #full_text=                                                                                                                          
 #interval=once
 
-[weather]
-full_text=Weather:
-markup=pango
-interval=60
-command=curl -sS 'https://wttr.in/Renukoot?format=1'
+#[weather]
+#full_text=Weather:
+#markup=pango
+#interval=60
+#command=curl -sS 'https://wttr.in/Renukoot?format=1'
 
 [volume]
 label=🔊
@@ -135,6 +135,10 @@ min_width=CPU 100.00%
 label=LOAD
 interval=10
 
+[bluetooth]
+command=~/.dotfiles/.config/i3blocks/scripts/bluetooth/bluetooth.sh
+interval=10
+
 # Battery indicator
 #
 # The battery instance defaults to 0.
@@ -146,16 +150,16 @@ interval=30
 
 # Date Time
 #
-[time]
-label=🕒 
-command=date '+%I:%M %p'
-interval=5
-
-
-[date]
-label=🗓️ 
-command=date '+%a %d %b %Y'
-interval=5
+#[time]
+#label=🕒 
+#command=date '+%I:%M %p'
+#interval=5
+#
+#
+#[date]
+#label=🗓️ 
+#command=date '+%a %d %b %Y'
+#interval=5
 
 #[power]
 #full_text=<span color='#C70039'> </span>

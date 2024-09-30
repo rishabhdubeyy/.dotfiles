@@ -41,7 +41,7 @@ exec --no-startup-id nm-applet
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 
-exec --no-startup-id notify-send "👋 Welcome, $USER" "⏰ Time: $(date '+%H:%M:%S')\n📅 Date: $(date '+%A, %B %d, %Y')"
+bindsym $mod+t exec --no-startup-id ~/.dotfiles/.config/perscript/wel_noti.sh
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
