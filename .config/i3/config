@@ -42,6 +42,7 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 
 bindsym $mod+t exec --no-startup-id ~/.dotfiles/.config/perscript/wel_noti.sh
+bindsym $mod+Shift+m exec ~/.dotfiles/.config/rofi/emoji.sh
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -220,7 +221,7 @@ client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color #90000
 #default_border none
 #default_floating_border none
 hide_edge_borders both
-# exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
+exec --no-startup-id picom --experimental-backends --config ~/.dotfiles/.config/picom/picom.conf
 
 #gaps inner 4
 #gaps outer 1
