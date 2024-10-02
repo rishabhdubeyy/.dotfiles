@@ -212,16 +212,17 @@ set $text-color #DBD8E3
 set $urgent-bg-color #5C5470
 
 # class                 border             bg                 text        indicator
-client.focused          $bg-color          $bg-color          $text-color #2e9ef4
-client.focused_inactive $inactive-bg-color $inactive-bg-color #616060     #484e50
-client.unfocused        $inactive-bg-color $inactive-bg-color #616060     #292d2e
-client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color #900000
+client.focused          $bg-color          $bg-color          $text-color $bg-color
+client.focused_inactive $inactive-bg-color $inactive-bg-color #616060     $inactive-bg-color
+client.unfocused        $inactive-bg-color $inactive-bg-color #616060     $inactive-bg-color
+client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color $urgent-bg-color
 
 # window adjustments
 #default_border none
 #default_floating_border none
-hide_edge_borders both
-exec --no-startup-id picom --experimental-backends --config ~/.dotfiles/.config/picom/picom.conf
+#hide_edge_borders both
+#for_window [class="^.*"] border pixel 0
+#exec --no-startup-id picom --experimental-backends --config ~/.dotfiles/.config/picom/picom.conf
 
 #gaps inner 4
 #gaps outer 1
