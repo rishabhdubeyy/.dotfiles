@@ -1,0 +1,56 @@
+# sun_moon.eww
+widget sun_moon {
+    layout: vertical
+    size: 300x300
+    background: transparent
+    border: 0
+
+    # Sun
+    box sun {
+        size: 60x60
+        background: #FFFFFF
+        border-radius: 30
+        text: "S"
+        font-size: 36
+        align: center
+        valign: center
+    }
+
+    # Earth
+    box earth {
+        size: 40x40
+        background: #FFFFFF
+        border-radius: 20
+        text: "E"
+        font-size: 24
+        align: center
+        valign: center
+    }
+
+    # Moon
+    box moon {
+        size: 30x30
+        background: #FFFFFF
+        border-radius: 15
+        text: "M"
+        font-size: 18
+        align: center
+        valign: center
+    }
+}
+
+# Positioning
+sun {
+    x: 120
+    y: 120
+}
+
+earth {
+    x: 180
+    y: 120
+}
+
+moon {
+    x: 210
+    y: 100
+}

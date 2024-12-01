@@ -38,6 +38,11 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s noblank
+
+
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 
@@ -222,7 +227,7 @@ client.urgent           $urgent-bg-color   $urgent-bg-color   $text-color $urgen
 #default_floating_border none
 #hide_edge_borders both
 #for_window [class="^.*"] border pixel 0
-#exec --no-startup-id picom --experimental-backends --config ~/.dotfiles/.config/picom/picom.conf
+exec --no-startup-id picom --experimental-backends --config ~/.dotfiles/.config/picom/picom.conf
 
 #gaps inner 4
 #gaps outer 1
