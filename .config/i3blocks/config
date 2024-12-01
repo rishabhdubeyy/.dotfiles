@@ -150,16 +150,16 @@ interval=30
 
 # Date Time
 #
-#[time]
-#label=🕒 
-#command=date '+%I:%M %p'
-#interval=5
+[time]
+label=🕒 
+command=date '+%I:%M %p'
+interval=5
 #
 #
-#[date]
-#label=🗓️ 
-#command=date '+%a %d %b %Y'
-#interval=5
+[date]
+label=🗓️ 
+command=date '+%a %d %b %Y'
+interval=5
 
 #[power]
 #full_text=<span color='#C70039'> </span>
